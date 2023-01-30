@@ -1,0 +1,67 @@
+#                                                     🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Phoenix Tools Config💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Phoenix Tools Config💻
+#                                                     🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+Version: 'Version 1.0'
+ConfigVersion: '1.0'
+##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+#ragnarokTools.Give > Ability to give tools
+#ragnarokTools.Help > Shows the help menu
+#ragnarokTools.Reload > Reload the plugin config files
+#ragnarokTools.List > Shows the tool list menu
+
+#♢♢♢♢♢MultiBlock Pickaxe Item♢♢♢♢♢
+#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
+MultiBlockPickaxe-Name: '&5&lMultiBlock &d&lPickaxe'
+
+#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+MultiBlockPickaxe-Lore:
+  - '&2&lMines in a &43x3x1 &2Area'
+  - ''
+  - '&bCustom Pickaxe'
+
+#♢♢♢♢♢Spawner Pickaxe Item♢♢♢♢♢
+#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
+SpawnerPickaxe-Name: '&6&lSpawner &e&lPickaxe'
+
+#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+SpawnerPickaxe-Lore:
+  - '&a&lCan pickup any spawner'
+  - ''
+  - '&bCustom Pickaxe'
+
+#♢♢♢♢♢Molten Pickaxe Item♢♢♢♢♢
+#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
+MoltenPickaxe-Name: '&4&lMolten &c&lPickaxe'
+
+#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+MoltenPickaxe-Lore:
+  - '&3&lAutomatically smelts blocks when you break them'
+  - ''
+  - '&bCustom Pickaxe'
+
+#♢♢♢♢♢Cobble Gobble Pickaxe Item♢♢♢♢♢
+#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
+CobblePickaxe-Name: '&7&lCobble Gobble &f&lPickaxe'
+
+#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+CobblePickaxe-Lore:
+  - '&8&lInstantly mines stone and cobblestone'
+  - ''
+  - '&4&lCANNOT MINE OTHER BLOCKS'
+  - ''
+  - '&bCustom Pickaxe'
+
+
+
+#See messages.yml for all configurable plugin messages
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/ePQGvQuzG3
+#♏ Thanks for downloading and have a wonderful day
+
+#♛♛♛♛♛ END OF CONFIG ♛♛♛♛♛
+#This is the default config file.

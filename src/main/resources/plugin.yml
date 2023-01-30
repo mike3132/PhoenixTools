@@ -1,0 +1,10 @@
+name: PhoenixTools
+version: '${project.version}'
+main: net.resolutemc.phoenixtools.Main
+api-version: 1.19
+authors: [ Mike3132 ]
+description: ResoluteMC custom tools plugin
+website: www.resolutemc.net
+commands:
+  tools:
+    description: Main plugin command
