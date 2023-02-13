@@ -54,7 +54,7 @@ public class CobblePickaxeEvent implements Listener {
 
     /**
      *
-     * @param ice Checks to see if the Molten Pickaxe has been placed inside an anvil
+     * @param ice Checks to see if the Cobble Pickaxe has been placed inside an anvil
      *            And if so the event is canceled and the player is sent a message.
      */
     @EventHandler

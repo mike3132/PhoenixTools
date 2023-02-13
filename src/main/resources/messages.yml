@@ -50,12 +50,6 @@ Messages:
   #♢♢♢♢♢ Cannot place in anvil ♢♢♢♢♢
   Anvil-disabled-message: '&4&lERROR: &cYou cannot modify this tool'
 
-  #♢♢♢♢♢ Spawner pickaxe break ♢♢♢♢♢
-  Spawner-break-message: '&6Now breaking spawner'
-
-  #♢♢♢♢♢ Remove spawner pickaxe from player ♢♢♢♢♢
-  Remove-pickaxe-placeholder: '&eNow removing the pickaxe'
-
 
   #➳➳➳➳➳ Help Section ➳➳➳➳➳
 

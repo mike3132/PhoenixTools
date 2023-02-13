@@ -38,13 +38,11 @@ public class SpawnerPickaxeEvent implements Listener {
         if (!player.getInventory().getItemInMainHand().getType().equals(Material.GOLDEN_PICKAXE)) return;
         if (player.getInventory().getItemInMainHand().getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING)) {
             SpawnerPickaxeMap.onEnabled(player);
-            ChatMessage.sendPlayerMessage(player, "Spawner-break-message");
             new BukkitRunnable() {
                 @Override
                 public void run() {
                     SpawnerPickaxeMap.onDisabled(player);
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() -1);
-                    ChatMessage.sendPlayerMessage(player, "Remove-pickaxe-placeholder");
                 }
             }.runTaskLaterAsynchronously(Main.plugin, 1L);
         }
