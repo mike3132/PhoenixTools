@@ -28,7 +28,7 @@ public class SpawnerPickaxe {
         meta.setDisplayName(Main.chatColor("" + Main.plugin.getConfig().getString("SpawnerPickaxe-Name")));
         meta.setLore(lore);
         NamespacedKey key = new NamespacedKey(Main.plugin, "Spawner-Pickaxe-Key");
-        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "Spawner-Pickaxe");
+        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "SpawnerPickaxe");
         meta.addEnchant(Enchantment.SILK_TOUCH, 1, true);
         item.setItemMeta(meta);
         return item;

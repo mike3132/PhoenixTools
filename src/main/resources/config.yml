@@ -15,46 +15,71 @@ ConfigVersion: '1.0'
 #ragnarokTools.List > Shows the tool list menu
 
 #♢♢♢♢♢MultiBlock Pickaxe Item♢♢♢♢♢
-#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
-MultiBlockPickaxe-Name: '&5&lMultiBlock &d&lPickaxe'
+#MultiBlockPickaxe Name -> Name of the multiblock pickaxe (Please use & for color codes).
+MultiBlockPickaxe-Name: '&5&lMultiBlock Pickaxe'
 
-#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+#MultiBlockPickaxe Lore -> Any lore lines you would like on the multiblock pickaxe (Please use & for color codes).
 MultiBlockPickaxe-Lore:
-  - '&2&lMines in a &43x3x1 &2Area'
+  - '&7Mines in a &f3x3x1 &7Area'
   - ''
   - '&bCustom Pickaxe'
 
 #♢♢♢♢♢Spawner Pickaxe Item♢♢♢♢♢
-#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
-SpawnerPickaxe-Name: '&6&lSpawner &e&lPickaxe'
+#Spawner Pickaxe Name -> Name of the spawner pickaxe (Please use & for color codes).
+SpawnerPickaxe-Name: '&6&lSpawner Pickaxe'
 
-#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+#Spawner Pickaxe Lore -> Any lore lines you would like on the spawner pickaxe (Please use & for color codes).
 SpawnerPickaxe-Lore:
-  - '&a&lCan pickup any spawner'
+  - '&7Can pickup any spawner'
   - ''
   - '&bCustom Pickaxe'
 
 #♢♢♢♢♢Molten Pickaxe Item♢♢♢♢♢
-#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
-MoltenPickaxe-Name: '&4&lMolten &c&lPickaxe'
+#Molten Pickaxe Name -> Name of the molten pickaxe (Please use & for color codes).
+MoltenPickaxe-Name: '&4&lMolten Pickaxe'
 
-#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+#Molten Pickaxe Lore -> Any lore lines you would like on the molten pickaxe (Please use & for color codes).
 MoltenPickaxe-Lore:
-  - '&3&lAutomatically smelts blocks when you break them'
+  - '&7Automatically smelts blocks when you break them'
   - ''
   - '&bCustom Pickaxe'
 
 #♢♢♢♢♢Cobble Gobble Pickaxe Item♢♢♢♢♢
-#MultiBlockPickaxe Name -> Name of the world edit wand (Please use & for color codes).
-CobblePickaxe-Name: '&7&lCobble Gobble &f&lPickaxe'
+#Cobble Gobble Pickaxe Name -> Name of the cobble gobble pickaxe (Please use & for color codes).
+CobblePickaxe-Name: '&7&lCobble Gobble Pickaxe'
 
-#MultiBlockPickaxe Lore -> Any lore lines you would like on the world edit wand (Please use & for color codes).
+#Cobble Gobble Pickaxe Lore -> Any lore lines you would like on the cobble gobble pickaxe (Please use & for color codes).
 CobblePickaxe-Lore:
-  - '&8&lInstantly mines stone and cobblestone'
+  - '&7Instantly mines stone and cobblestone'
   - ''
-  - '&4&lCANNOT MINE OTHER BLOCKS'
+  - '&4CANNOT MINE OTHER BLOCKS'
   - ''
   - '&bCustom Pickaxe'
+
+#♢♢♢♢♢Harvester Hoe Item♢♢♢♢♢
+#Harvester Hoe Name -> Name of the harvester hoe (Please use & for color codes).
+HarvesterHoe-Name: '&3&lHarvester &d&lHoe'
+
+#Harvester Hoe Lore -> Any lore lines you would like on the harvester hoe (Please use & for color codes).
+HarvesterHoe-Lore:
+  - '&7Automatically replants any crops mined'
+  - ''
+  - '&bCustom Hoe'
+
+#Harvester Hoe Crop Types -> Enabled / Disable specific crops.
+#The following crops are the on only ones able to be auto replanted (WHEAT, CARROTS, POTATOES, NETHER_WART, BEETROOTS)
+CropsToHarvest:
+  - "WHEAT"
+  - "CARROTS"
+  - "POTATOES"
+  - "NETHER_WART"
+  - "BEETROOTS"
+
+Replant-Particles: true
+Replant-Sound: true
+
+
+
 
 
 

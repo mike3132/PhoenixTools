@@ -28,7 +28,7 @@ public class MoltenPickaxe {
         meta.setDisplayName(Main.chatColor("" + Main.plugin.getConfig().getString("MoltenPickaxe-Name")));
         meta.setLore(lore);
         NamespacedKey key = new NamespacedKey(Main.plugin, "Molten-Pickaxe-Key");
-        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "Molten-Pickaxe");
+        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "MoltenPickaxe");
         meta.addEnchant(Enchantment.DIG_SPEED, 5, true);
         item.setItemMeta(meta);
         return item;

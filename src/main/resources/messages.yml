@@ -18,43 +18,46 @@ Messages:
   #➳➳➳➳➳ Command Arguments ➳➳➳➳➳
 
   #♢♢♢♢♢ No permission placeholder ♢♢♢♢♢
-  No-permissions-placeholder: '&4&lERROR: &cYou do not have permission to execute this command'
+  No-permissions-placeholder: '&4ERROR: &cYou do not have permission to execute this command.'
 
   #♢♢♢♢♢ Not enough placeholder ♢♢♢♢♢
-  Not-enough-args-placeholder: '&4&lERROR: &cNot enough command args'
+  Not-enough-args-placeholder: '&4ERROR: &cNot enough command arguments.'
 
   #♢♢♢♢♢ Give placeholder ♢♢♢♢♢
-  Not-give-placeholder: '&4&lERROR: &cInvalid argument. &2Please use "Give" "List" "Reload"'
+  Not-give-placeholder: '&4ERROR: &cInvalid argument. &2Please use "Give" "List" "Reload."'
 
   #♢♢♢♢♢ Player name placeholder ♢♢♢♢♢
-  Not-player-placeholder: '&4&lERROR: &cPlease choose a player name'
+  Not-player-placeholder: '&4ERROR: &cPlease choose a player name.'
 
   #♢♢♢♢♢ Player not found placeholder ♢♢♢♢♢
-  Player-not-found-placeholder: '&4&lERROR: &cThis is not a player'
+  Player-not-found-placeholder: '&4ERROR: &cThis is not a player.'
 
   #♢♢♢♢♢ Tool name placeholder ♢♢♢♢♢
-  Not-tool-placeholder: '&4&lERROR: &cPlease choose a tool'
+  Not-tool-placeholder: '&4ERROR: &cPlease choose a tool.'
 
   #♢♢♢♢♢ Tool not found placeholder ♢♢♢♢♢
-  Tool-not-found-placeholder: '&4&lERROR: &cThis is not a tool name'
+  Tool-not-found-placeholder: '&4ERROR: &cThis is not a tool name.'
 
   #♢♢♢♢♢ Player give placeholder ♢♢♢♢♢
-  Player-give-tool-placeholder: '&6&lYou have been given a tool'
+  Player-give-tool-placeholder: '&6You have been given a tool.'
 
   #♢♢♢♢♢ Player inventory full placeholder ♢♢♢♢♢
-  Player-inventory-full-placeholder: '&6&lYou do not have an available inventory slot, Your tools have been dropped on the ground'
+  Player-inventory-full-placeholder: '&6You do not have an available inventory slot, Your tools have been dropped on the ground.'
 
 
   #➳➳➳➳➳ Tool Messages ➳➳➳➳➳
 
   #♢♢♢♢♢ Cannot place in anvil ♢♢♢♢♢
-  Anvil-disabled-message: '&4&lERROR: &cYou cannot modify this tool'
+  Anvil-disabled-message: '&4ERROR: &cYou cannot modify this tool.'
+
+  #♢♢♢♢♢ Harvester Hoe Player No Seed placeholder ♢♢♢♢♢
+  Player-no-seed-placeholder: '&6To auto replant you must have the appropriate seeds in your inventory'
 
 
   #➳➳➳➳➳ Help Section ➳➳➳➳➳
 
   #♢♢♢♢♢ Tools list ♢♢♢♢♢
-  Tools-list-placeholder-header: '&e----- &6&lCurrent list of tools &e-----'
+  Tools-list-placeholder-header: '&e----- &6Current list of tools &e-----'
   Tools-list-A: '&eSpawnerPick &7> &fWill silk touch any spawner'
   Tools-list-B: '&4MoltenPick &7> &fAutomatically smelts blocks'
   Tools-list-C: '&5MultiBlockPick &7> &fBreaks blocks in a 3x3x1'

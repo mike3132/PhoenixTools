@@ -11,22 +11,23 @@ import org.bukkit.persistence.PersistentDataType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CobblePickaxe {
+public class HarvesterHoe {
 
-    public static ItemStack getCobblePickaxe() {
-        ItemStack item = new ItemStack(Material.DIAMOND_PICKAXE, 1);
+    public static ItemStack getHarvesterHoe() {
+        ItemStack item = new ItemStack(Material.DIAMOND_HOE, 1);
         ItemMeta meta = item.getItemMeta();
         List<String> lore = new ArrayList<>();
 
-        for (String relLore : Main.plugin.getConfig().getStringList("CobblePickaxe-Lore")) {
+        for (String relLore : Main.plugin.getConfig().getStringList("HarvesterHoe-Lore")) {
             lore.add(Main.chatColor("" + relLore));
         }
-        meta.setDisplayName(Main.chatColor("" + Main.plugin.getConfig().getString("CobblePickaxe-Name")));
+        meta.setDisplayName(Main.chatColor("" + Main.plugin.getConfig().getString("HarvesterHoe-Name")));
         meta.setLore(lore);
-        NamespacedKey key = new NamespacedKey(Main.plugin, "Cobble-Pickaxe-Key");
-        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "CobblePickaxe");
-        meta.addEnchant(Enchantment.DIG_SPEED, 10, true);
+        NamespacedKey key = new NamespacedKey(Main.plugin, "HarvesterHoe-Key");
+        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "HarvesterHoe");
+        meta.addEnchant(Enchantment.SILK_TOUCH, 1, true);
         item.setItemMeta(meta);
         return item;
     }
+
 }

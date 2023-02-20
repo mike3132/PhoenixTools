@@ -61,6 +61,7 @@ public class TabComplete implements TabCompleter {
                 arguments.add("MultiBlockPickaxe");
                 arguments.add("SpawnerPickaxe");
                 arguments.add("CobblePickaxe");
+                arguments.add("HarvesterHoe");
                 for (String s : arguments) {
                     if (s.toLowerCase().startsWith(args[2].toLowerCase())) result.add(s);
                 }

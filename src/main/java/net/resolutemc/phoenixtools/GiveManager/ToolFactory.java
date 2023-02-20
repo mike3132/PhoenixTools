@@ -1,9 +1,6 @@
 package net.resolutemc.phoenixtools.GiveManager;
 
-import net.resolutemc.phoenixtools.ItemManager.CobblePickaxe;
-import net.resolutemc.phoenixtools.ItemManager.MoltenPickaxe;
-import net.resolutemc.phoenixtools.ItemManager.MultiBlockPickaxe;
-import net.resolutemc.phoenixtools.ItemManager.SpawnerPickaxe;
+import net.resolutemc.phoenixtools.ItemManager.*;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.Locale;
@@ -25,6 +22,8 @@ public class ToolFactory {
                 return MoltenPickaxe.getMoltenPickaxe();
             case  "COBBLEPICKAXE":
                 return CobblePickaxe.getCobblePickaxe();
+            case "HARVESTERHOE":
+                return HarvesterHoe.getHarvesterHoe();
         }
         return null;
     }

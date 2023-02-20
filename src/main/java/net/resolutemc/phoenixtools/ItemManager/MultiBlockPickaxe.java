@@ -29,7 +29,7 @@ public class MultiBlockPickaxe {
         meta.setDisplayName(Main.chatColor("" + Main.plugin.getConfig().getString("MultiBlockPickaxe-Name")));
         meta.setLore(lore);
         NamespacedKey key = new NamespacedKey(Main.plugin, "MultiBlock-Pickaxe-Key");
-        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "MultiBlock-Pickaxe");
+        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "MultiBlockPickaxe");
         meta.addEnchant(Enchantment.DIG_SPEED, 5, true);
         item.setItemMeta(meta);
         return item;
