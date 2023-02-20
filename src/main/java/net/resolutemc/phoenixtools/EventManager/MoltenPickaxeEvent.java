@@ -21,6 +21,8 @@ import java.util.Iterator;
 public class MoltenPickaxeEvent implements Listener {
 
     NamespacedKey key = new NamespacedKey(Main.plugin, "Molten-Pickaxe-Key");
+    boolean particlesEnabled = Main.plugin.getConfig().getBoolean("Smelt-Particles");
+    boolean soundEnabled = Main.plugin.getConfig().getBoolean("Smelt-Sounds");
 
     /**
      *
@@ -53,6 +55,12 @@ public class MoltenPickaxeEvent implements Listener {
                             groundItem.setAmount(drops.getAmount());
                             bdi.getItems().remove(bdi.getItems().get(i));
                             block.getWorld().dropItemNaturally(blockLocation, groundItem);
+                            if (particlesEnabled) {
+                                block.getWorld().spawnParticle(Particle.LAVA, blockLocation, 3);
+                            }
+                            if (soundEnabled) {
+                                player.playSound(blockLocation, Sound.BLOCK_FURNACE_FIRE_CRACKLE, 1, 1);
+                            }
                         }
                     }
                 }

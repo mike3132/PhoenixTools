@@ -24,6 +24,10 @@ MultiBlockPickaxe-Lore:
   - ''
   - '&bCustom Pickaxe'
 
+#This enables / disables the particles that appear when you mine a 3x3 of blocks
+MultiBlock-Particles: true
+
+
 #♢♢♢♢♢Spawner Pickaxe Item♢♢♢♢♢
 #Spawner Pickaxe Name -> Name of the spawner pickaxe (Please use & for color codes).
 SpawnerPickaxe-Name: '&6&lSpawner Pickaxe'
@@ -44,6 +48,12 @@ MoltenPickaxe-Lore:
   - ''
   - '&bCustom Pickaxe'
 
+#This enables / disables the particles that appear when you auto smelt an block
+Smelt-Particles: true
+
+#This enables / disables the furnace sound that plays when you auto smelt a block
+Smelt-Sounds: true
+
 #♢♢♢♢♢Cobble Gobble Pickaxe Item♢♢♢♢♢
 #Cobble Gobble Pickaxe Name -> Name of the cobble gobble pickaxe (Please use & for color codes).
 CobblePickaxe-Name: '&7&lCobble Gobble Pickaxe'
@@ -55,6 +65,10 @@ CobblePickaxe-Lore:
   - '&4CANNOT MINE OTHER BLOCKS'
   - ''
   - '&bCustom Pickaxe'
+
+#This enables / disables the particles that appear when you break a stone/cobblestone while flying
+Break-Particles: true
+
 
 #♢♢♢♢♢Harvester Hoe Item♢♢♢♢♢
 #Harvester Hoe Name -> Name of the harvester hoe (Please use & for color codes).
@@ -75,7 +89,10 @@ CropsToHarvest:
   - "NETHER_WART"
   - "BEETROOTS"
 
+#This enables/disables particles appearing on the 4 corners of a crop when it's replanted
 Replant-Particles: true
+
+#This enables/disables the custom sound when a crop is replanted
 Replant-Sound: true
 
 

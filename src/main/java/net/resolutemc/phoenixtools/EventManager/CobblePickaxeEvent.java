@@ -2,9 +2,7 @@ package net.resolutemc.phoenixtools.EventManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
 import net.resolutemc.phoenixtools.Main;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.Sound;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -22,6 +20,7 @@ import org.bukkit.potion.PotionEffectType;
 public class CobblePickaxeEvent implements Listener {
 
     NamespacedKey key = new NamespacedKey(Main.plugin, "Cobble-Pickaxe-Key");
+    boolean particlesEnabled = Main.plugin.getConfig().getBoolean("Break-Particles");
 
     @EventHandler
     public void onBlockInteract(PlayerInteractEvent pie) {
@@ -34,6 +33,9 @@ public class CobblePickaxeEvent implements Listener {
             if (block == null) return;
             if (!block.getType().equals(Material.STONE) && !block.getType().equals(Material.COBBLESTONE)) return;
             player.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 1, 9, false, false, false));
+            if (particlesEnabled) {
+                block.getWorld().spawnParticle(Particle.CLOUD, block.getLocation(), 1);
+            }
         }
     }
 

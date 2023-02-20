@@ -2,10 +2,7 @@ package net.resolutemc.phoenixtools.EventManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
 import net.resolutemc.phoenixtools.Main;
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.Sound;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
@@ -90,6 +87,10 @@ public class MultiBlockPickaxeEvent implements Listener {
                 Bukkit.getPluginManager().callEvent(multiBlockEvent);
                 if (multiBlockEvent.isCancelled()) continue;
                 relative.breakNaturally(player.getInventory().getItemInMainHand());
+                boolean particlesEnabled = Main.plugin.getConfig().getBoolean("MultiBlock-Particles");
+                if (particlesEnabled) {
+                    relative.getWorld().spawnParticle(Particle.ELECTRIC_SPARK, relative.getLocation(), 1);
+                }
             }
         }
     }
