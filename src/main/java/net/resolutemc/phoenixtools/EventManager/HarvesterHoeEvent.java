@@ -9,6 +9,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -119,6 +122,25 @@ public class HarvesterHoeEvent implements Listener {
                 item.setAmount(item.getAmount() - 1);
                 player.getInventory().setItem(i, item);
                 break;
+            }
+        }
+    }
+
+    @EventHandler
+    public void playerClickAnvil(InventoryClickEvent ice) {
+        Player player = (Player) ice.getWhoClicked();
+        Inventory blockInventory = ice.getClickedInventory();
+        ItemStack item = ice.getCurrentItem();
+
+        if (blockInventory == null) return;
+        if (blockInventory.getType().equals(InventoryType.ANVIL)) {
+            if (ice.getSlot() == 2) {
+                if (item.getItemMeta() == null) return;
+                if (item.getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING)) {
+                    ice.setCancelled(true);
+                    ChatMessage.sendPlayerMessage(player, "Anvil-disabled-message");
+                    player.playSound(player, Sound.BLOCK_ANVIL_DESTROY, 1, 1);
+                }
             }
         }
     }
