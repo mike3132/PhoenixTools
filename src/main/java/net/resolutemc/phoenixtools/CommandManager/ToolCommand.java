@@ -26,7 +26,7 @@ public class ToolCommand implements CommandExecutor {
                 ChatMessage.sendConsoleMessage(sender, "No-permissions-placeholder");
                 return false;
             }
-            sender.sendMessage(Main.chatColor("&bRagnarok &6Tools &7> &aPlugin config reloaded in &2" + String.valueOf(System.currentTimeMillis() - 1) + " &ams"));
+            sender.sendMessage(Main.chatColor("&4Phoenix &6Tools &7> &aPlugin config reloaded in &2" + String.valueOf(System.currentTimeMillis() - 1) + " &ams"));
             Main.plugin.reloadConfig();
             return false;
         }
