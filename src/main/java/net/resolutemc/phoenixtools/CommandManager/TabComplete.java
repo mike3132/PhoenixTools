@@ -1,6 +1,6 @@
 package net.resolutemc.phoenixtools.CommandManager;
 
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -13,7 +13,7 @@ import java.util.List;
 public class TabComplete implements TabCompleter {
 
     public TabComplete() {
-        Main.plugin.getCommand("Tools").setTabCompleter(this);
+        PhoenixTools.getInstance().getCommand("Tools").setTabCompleter(this);
     }
 
     List<String> arguments = new ArrayList<>();
@@ -62,6 +62,7 @@ public class TabComplete implements TabCompleter {
                 arguments.add("SpawnerPickaxe");
                 arguments.add("CobblePickaxe");
                 arguments.add("HarvesterHoe");
+                arguments.add("GlassBreaker");
                 for (String s : arguments) {
                     if (s.toLowerCase().startsWith(args[2].toLowerCase())) result.add(s);
                 }

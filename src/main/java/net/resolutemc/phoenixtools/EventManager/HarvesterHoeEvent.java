@@ -1,7 +1,7 @@
 package net.resolutemc.phoenixtools.EventManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Ageable;
@@ -21,7 +21,7 @@ import java.util.List;
 
 public class HarvesterHoeEvent implements Listener {
 
-    NamespacedKey key = new NamespacedKey(Main.plugin, "HarvesterHoe-Key");
+    NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "HarvesterHoe-Key");
 
     @EventHandler
     public void onClick(BlockBreakEvent bbe) {
@@ -33,7 +33,7 @@ public class HarvesterHoeEvent implements Listener {
         if (player.getInventory().getItemInMainHand().getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING)) {
 
             List<Material> cropsEnabled = new ArrayList<>();
-            for (String string : Main.plugin.getConfig().getStringList("CropsToHarvest")) {
+            for (String string : PhoenixTools.getInstance().getConfig().getStringList("CropsToHarvest")) {
                 cropsEnabled.add(Material.valueOf(string));
             }
 
@@ -53,8 +53,8 @@ public class HarvesterHoeEvent implements Listener {
         }
     }
 
-    boolean particlesEnabled = Main.plugin.getConfig().getBoolean("Replant-Particles");
-    boolean soundsEnabled = Main.plugin.getConfig().getBoolean("Replant-Sound");
+    boolean particlesEnabled = PhoenixTools.getInstance().getConfig().getBoolean("Replant-Particles");
+    boolean soundsEnabled = PhoenixTools.getInstance().getConfig().getBoolean("Replant-Sound");
     private void replantCrop(Location location, Material cropType) {
         Block block = location.getBlock();
         new BukkitRunnable() {
@@ -71,7 +71,7 @@ public class HarvesterHoeEvent implements Listener {
                     location.getWorld().playSound(location, Sound.ITEM_CROP_PLANT,1,1);
                 }
             }
-        }.runTaskLater(Main.plugin, 20L);
+        }.runTaskLater(PhoenixTools.getInstance(), 20L);
     }
 
     private Material getSeedType(Material cropType) {

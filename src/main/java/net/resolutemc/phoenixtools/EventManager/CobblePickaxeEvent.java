@@ -1,7 +1,7 @@
 package net.resolutemc.phoenixtools.EventManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -19,8 +19,8 @@ import org.bukkit.potion.PotionEffectType;
 
 public class CobblePickaxeEvent implements Listener {
 
-    NamespacedKey key = new NamespacedKey(Main.plugin, "Cobble-Pickaxe-Key");
-    boolean particlesEnabled = Main.plugin.getConfig().getBoolean("Break-Particles");
+    NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "CobblePickaxe-Key");
+    boolean particlesEnabled = PhoenixTools.getInstance().getConfig().getBoolean("Break-Particles");
 
     @EventHandler
     public void onBlockInteract(PlayerInteractEvent pie) {

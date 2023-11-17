@@ -1,7 +1,7 @@
 package net.resolutemc.phoenixtools.EventManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -20,9 +20,9 @@ import java.util.Iterator;
 
 public class MoltenPickaxeEvent implements Listener {
 
-    NamespacedKey key = new NamespacedKey(Main.plugin, "Molten-Pickaxe-Key");
-    boolean particlesEnabled = Main.plugin.getConfig().getBoolean("Smelt-Particles");
-    boolean soundEnabled = Main.plugin.getConfig().getBoolean("Smelt-Sounds");
+    NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "MoltenPickaxe-Key");
+    boolean particlesEnabled = PhoenixTools.getInstance().getConfig().getBoolean("Smelt-Particles");
+    boolean soundEnabled = PhoenixTools.getInstance().getConfig().getBoolean("Smelt-Sounds");
 
     /**
      *

@@ -24,6 +24,8 @@ public class ToolFactory {
                 return CobblePickaxe.getCobblePickaxe();
             case "HARVESTERHOE":
                 return HarvesterHoe.getHarvesterHoe();
+            case "GLASSBREAKER":
+                return GlassBreaker.getGlassBreaker();
         }
         return null;
     }

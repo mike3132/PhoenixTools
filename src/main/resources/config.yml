@@ -27,6 +27,8 @@ MultiBlockPickaxe-Lore:
 #This enables / disables the particles that appear when you mine a 3x3 of blocks
 MultiBlock-Particles: true
 
+#This allows for custom model data for resource packs
+MultiBlock-Model-Data: 1000
 
 #♢♢♢♢♢Spawner Pickaxe Item♢♢♢♢♢
 #Spawner Pickaxe Name -> Name of the spawner pickaxe (Please use & for color codes).
@@ -37,6 +39,9 @@ SpawnerPickaxe-Lore:
   - '&7Can pickup any spawner'
   - ''
   - '&bCustom Pickaxe'
+
+#This allows for custom model data for resource packs
+SpawnerPickaxe-Model-Data: 1001
 
 #♢♢♢♢♢Molten Pickaxe Item♢♢♢♢♢
 #Molten Pickaxe Name -> Name of the molten pickaxe (Please use & for color codes).
@@ -54,6 +59,9 @@ Smelt-Particles: true
 #This enables / disables the furnace sound that plays when you auto smelt a block
 Smelt-Sounds: true
 
+#This allows for custom model data for resource packs
+MoltenPickaxe-Model-Data: 1002
+
 #♢♢♢♢♢Cobble Gobble Pickaxe Item♢♢♢♢♢
 #Cobble Gobble Pickaxe Name -> Name of the cobble gobble pickaxe (Please use & for color codes).
 CobblePickaxe-Name: '&7&lCobble Gobble Pickaxe'
@@ -69,6 +77,9 @@ CobblePickaxe-Lore:
 #This enables / disables the particles that appear when you break a stone/cobblestone while flying
 Break-Particles: true
 
+#This allows for custom model data for resource packs
+CobblePickaxe-Model-Data: 1003
+
 
 #♢♢♢♢♢Harvester Hoe Item♢♢♢♢♢
 #Harvester Hoe Name -> Name of the harvester hoe (Please use & for color codes).
@@ -79,6 +90,9 @@ HarvesterHoe-Lore:
   - '&7Automatically replants any crops mined'
   - ''
   - '&bCustom Hoe'
+
+#This allows for custom model data for resource packs
+HarvesterHoe-Model-Data: 1004
 
 #Harvester Hoe Crop Types -> Enabled / Disable specific crops.
 #The following crops are the on only ones able to be auto replanted (WHEAT, CARROTS, POTATOES, NETHER_WART, BEETROOTS)
@@ -95,9 +109,19 @@ Replant-Particles: true
 #This enables/disables the custom sound when a crop is replanted
 Replant-Sound: true
 
+#♢♢♢♢♢Glass Breaker Item♢♢♢♢♢
+#Cobble Gobble Pickaxe Name -> Name of the cobble gobble pickaxe (Please use & for color codes).
+GlassBreaker-Name: '&6&lGlass &e&lBreaker'
 
+#Cobble Gobble Pickaxe Lore -> Any lore lines you would like on the cobble gobble pickaxe (Please use & for color codes).
+GlassBreaker-Lore:
+  - '&7Instantly mines glass blocks'
+  - ''
+  - '&4CANNOT MINE OTHER BLOCKS'
+  - ''
 
-
+#This allows for custom model data for resource packs
+GlassBreaker-Model-Data: 1005
 
 
 #See messages.yml for all configurable plugin messages

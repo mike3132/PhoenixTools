@@ -2,7 +2,7 @@ package net.resolutemc.phoenixtools.EventManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
 import net.resolutemc.phoenixtools.HashMapManager.SpawnerPickaxeMap;
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.Sound;
@@ -21,7 +21,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class SpawnerPickaxeEvent implements Listener {
 
-    NamespacedKey key = new NamespacedKey(Main.plugin, "Spawner-Pickaxe-Key");
+    NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "SpawnerPickaxe-Key");
 
     /**
      *
@@ -44,7 +44,7 @@ public class SpawnerPickaxeEvent implements Listener {
                     SpawnerPickaxeMap.onDisabled(player);
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() -1);
                 }
-            }.runTaskLaterAsynchronously(Main.plugin, 1L);
+            }.runTaskLaterAsynchronously(PhoenixTools.getInstance(), 1L);
         }
     }
 

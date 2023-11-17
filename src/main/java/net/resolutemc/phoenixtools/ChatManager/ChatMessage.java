@@ -1,6 +1,6 @@
 package net.resolutemc.phoenixtools.ChatManager;
 
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -16,7 +16,7 @@ public class ChatMessage {
      * @param key The key that is sent from the messages.yml file
      */
     public static void sendPlayerMessage(Player player, String key) {
-        File messagesConfig = new File(Main.plugin.getDataFolder(), "messages.yml");
+        File messagesConfig = new File(PhoenixTools.getInstance().getDataFolder(), "messages.yml");
         YamlConfiguration configMessages = YamlConfiguration.loadConfiguration(messagesConfig);
         String message = configMessages.getString("Messages.Prefix") + configMessages.getString("Messages." + key);
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
@@ -28,7 +28,7 @@ public class ChatMessage {
      * @param key The key that is sent from the messages.yml file
      */
     public static void sendMessageNoPrefix(CommandSender sender, String key) {
-        File messagesConfig = new File(Main.plugin.getDataFolder(), "messages.yml");
+        File messagesConfig = new File(PhoenixTools.getInstance().getDataFolder(), "messages.yml");
         YamlConfiguration configMessages = YamlConfiguration.loadConfiguration(messagesConfig);
         String message = configMessages.getString("Messages." + key, "message");
         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
@@ -40,7 +40,7 @@ public class ChatMessage {
      * @param key The key that is sent from the messages.yml file
      */
     public static void sendConsoleMessage(CommandSender sender, String key) {
-        File messagesConfig = new File(Main.plugin.getDataFolder(), "messages.yml");
+        File messagesConfig = new File(PhoenixTools.getInstance().getDataFolder(), "messages.yml");
         YamlConfiguration configMessages = YamlConfiguration.loadConfiguration(messagesConfig);
         String message = configMessages.getString("Messages.Prefix") + configMessages.getString("Messages." + key);
         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));

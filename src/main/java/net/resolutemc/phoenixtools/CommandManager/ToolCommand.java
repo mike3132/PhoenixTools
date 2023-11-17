@@ -1,8 +1,9 @@
 package net.resolutemc.phoenixtools.CommandManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
+import net.resolutemc.phoenixtools.ChatManager.ColorManager;
 import net.resolutemc.phoenixtools.GiveManager.ToolFactory;
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -13,7 +14,7 @@ import org.bukkit.inventory.ItemStack;
 public class ToolCommand implements CommandExecutor {
 
     public ToolCommand() {
-        Main.plugin.getCommand("Tools").setExecutor(this);
+        PhoenixTools.getInstance().getCommand("Tools").setExecutor(this);
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -26,8 +27,8 @@ public class ToolCommand implements CommandExecutor {
                 ChatMessage.sendConsoleMessage(sender, "No-permissions-placeholder");
                 return false;
             }
-            sender.sendMessage(Main.chatColor("&4Phoenix &6Tools &7> &aPlugin config reloaded in &2" + String.valueOf(System.currentTimeMillis() - 1) + " &ams"));
-            Main.plugin.reloadConfig();
+            sender.sendMessage(ColorManager.chatColor("&4Phoenix &6Tools &7> &aPlugin config reloaded in &2" + String.valueOf(System.currentTimeMillis() - 1) + " &ams"));
+            PhoenixTools.getInstance().reloadConfig();
             return false;
         }
 
@@ -40,6 +41,7 @@ public class ToolCommand implements CommandExecutor {
             ChatMessage.sendMessageNoPrefix(sender, "Tools-list-A");
             ChatMessage.sendMessageNoPrefix(sender, "Tools-list-B");
             ChatMessage.sendMessageNoPrefix(sender, "Tools-list-C");
+            ChatMessage.sendMessageNoPrefix(sender, "Tools-list-D");
             ChatMessage.sendMessageNoPrefix(sender, "Tools-list-placeholder-footer");
             return false;
         }

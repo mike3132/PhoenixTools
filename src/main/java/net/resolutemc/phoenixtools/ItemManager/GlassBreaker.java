@@ -12,26 +12,26 @@ import org.bukkit.persistence.PersistentDataType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CobblePickaxe {
+public class GlassBreaker {
 
     /**
      *
-     * @return This returns the itemStack of the Cobble Pickaxe
+     * @return Returns the itemStack of the glass breaker
      */
-    public static ItemStack getCobblePickaxe() {
-        ItemStack item = new ItemStack(Material.DIAMOND_PICKAXE, 1);
+    public static ItemStack getGlassBreaker() {
+        ItemStack item = new ItemStack(Material.SHEARS, 1);
         ItemMeta meta = item.getItemMeta();
         List<String> lore = new ArrayList<>();
 
-        for (String relLore : PhoenixTools.getInstance().getConfig().getStringList("CobblePickaxe-Lore")) {
+        for (String relLore : PhoenixTools.getInstance().getConfig().getStringList("GlassBreaker-Lore")) {
             lore.add(ColorManager.chatColor("" + relLore));
         }
-        meta.setDisplayName(ColorManager.chatColor("" + PhoenixTools.getInstance().getConfig().getString("CobblePickaxe-Name")));
+        meta.setDisplayName(ColorManager.chatColor("" + PhoenixTools.getInstance().getConfig().getString("GlassBreaker-Name")));
         meta.setLore(lore);
-        NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "Cobble-Pickaxe-Key");
-        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "CobblePickaxe-Key");
+        NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "GlassBreaker-Key");
+        meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "GlassBreaker");
         meta.addEnchant(Enchantment.DIG_SPEED, 10, true);
-        meta.setCustomModelData(PhoenixTools.getInstance().getConfig().getInt("CobblePickaxe-Model-Data"));
+        meta.setCustomModelData(PhoenixTools.getInstance().getConfig().getInt("GlassBreaker-Model-Data"));
         item.setItemMeta(meta);
         return item;
     }

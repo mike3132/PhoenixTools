@@ -1,6 +1,6 @@
 name: PhoenixTools
 version: '${project.version}'
-main: net.resolutemc.phoenixtools.Main
+main: net.resolutemc.phoenixtools.PhoenixTools
 api-version: 1.19
 authors: [ Mike3132 ]
 description: ResoluteMC custom tools plugin

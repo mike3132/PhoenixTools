@@ -61,6 +61,7 @@ Messages:
   Tools-list-A: '&eSpawnerPick &7> &fWill silk touch any spawner'
   Tools-list-B: '&4MoltenPick &7> &fAutomatically smelts blocks'
   Tools-list-C: '&5MultiBlockPick &7> &fBreaks blocks in a 3x3x1'
+  Tools-list-D: '&6GlassBreaker &7> &fBreaks glass blocks instantly'
   Tools-list-placeholder-footer: '&e----------------------------------------'
 
 

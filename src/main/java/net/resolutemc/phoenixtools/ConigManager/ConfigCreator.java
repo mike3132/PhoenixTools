@@ -1,6 +1,6 @@
 package net.resolutemc.phoenixtools.ConigManager;
 
-import net.resolutemc.phoenixtools.Main;
+import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -17,7 +17,7 @@ public enum ConfigCreator {
      * @return Gets the plugins data folder and returns the corresponding .yml file
      */
     public File getFile() {
-        return new File(Main.plugin.getDataFolder(), this.toString().toLowerCase(Locale.ROOT) + ".yml");
+        return new File(PhoenixTools.getInstance().getDataFolder(), this.toString().toLowerCase(Locale.ROOT) + ".yml");
     }
 
     /**
@@ -44,6 +44,6 @@ public enum ConfigCreator {
      * Creates the file.
      */
     public void create() {
-        Main.plugin.saveResource(this.toString().toLowerCase(Locale.ROOT) + ".yml", false);
+        PhoenixTools.getInstance().saveResource(this.toString().toLowerCase(Locale.ROOT) + ".yml", false);
     }
 }
