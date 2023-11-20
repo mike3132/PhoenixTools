@@ -12,7 +12,6 @@ public final class PhoenixTools extends JavaPlugin {
 
     private static PhoenixTools INSTANCE;
 
-
     @Override
     public void onEnable() {
         INSTANCE = this;
@@ -26,6 +25,7 @@ public final class PhoenixTools extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new CobblePickaxeEvent(), this);
         Bukkit.getPluginManager().registerEvents(new HarvesterHoeEvent(), this);
         Bukkit.getPluginManager().registerEvents(new GlassBreakerEvent(), this);
+        Bukkit.getPluginManager().registerEvents(new ItemMagnetEvent(), this);
 
         // Command loader
         registerToolCommand();

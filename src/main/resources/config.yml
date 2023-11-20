@@ -21,8 +21,6 @@ MultiBlockPickaxe-Name: '&5&lMultiBlock Pickaxe'
 #MultiBlockPickaxe Lore -> Any lore lines you would like on the multiblock pickaxe (Please use & for color codes).
 MultiBlockPickaxe-Lore:
   - '&7Mines in a &f3x3x1 &7Area'
-  - ''
-  - '&bCustom Pickaxe'
 
 #This enables / disables the particles that appear when you mine a 3x3 of blocks
 MultiBlock-Particles: true
@@ -37,8 +35,6 @@ SpawnerPickaxe-Name: '&6&lSpawner Pickaxe'
 #Spawner Pickaxe Lore -> Any lore lines you would like on the spawner pickaxe (Please use & for color codes).
 SpawnerPickaxe-Lore:
   - '&7Can pickup any spawner'
-  - ''
-  - '&bCustom Pickaxe'
 
 #This allows for custom model data for resource packs
 SpawnerPickaxe-Model-Data: 1001
@@ -50,8 +46,6 @@ MoltenPickaxe-Name: '&4&lMolten Pickaxe'
 #Molten Pickaxe Lore -> Any lore lines you would like on the molten pickaxe (Please use & for color codes).
 MoltenPickaxe-Lore:
   - '&7Automatically smelts blocks when you break them'
-  - ''
-  - '&bCustom Pickaxe'
 
 #This enables / disables the particles that appear when you auto smelt an block
 Smelt-Particles: true
@@ -71,11 +65,9 @@ CobblePickaxe-Lore:
   - '&7Instantly mines stone and cobblestone'
   - ''
   - '&4CANNOT MINE OTHER BLOCKS'
-  - ''
-  - '&bCustom Pickaxe'
 
 #This enables / disables the particles that appear when you break a stone/cobblestone while flying
-Break-Particles: true
+Cobble-Break-Particles: true
 
 #This allows for custom model data for resource packs
 CobblePickaxe-Model-Data: 1003
@@ -88,8 +80,6 @@ HarvesterHoe-Name: '&3&lHarvester &d&lHoe'
 #Harvester Hoe Lore -> Any lore lines you would like on the harvester hoe (Please use & for color codes).
 HarvesterHoe-Lore:
   - '&7Automatically replants any crops mined'
-  - ''
-  - '&bCustom Hoe'
 
 #This allows for custom model data for resource packs
 HarvesterHoe-Model-Data: 1004
@@ -118,11 +108,30 @@ GlassBreaker-Lore:
   - '&7Instantly mines glass blocks'
   - ''
   - '&4CANNOT MINE OTHER BLOCKS'
-  - ''
 
 #This allows for custom model data for resource packs
 GlassBreaker-Model-Data: 1005
 
+#♢♢♢♢♢Item Magnet Item♢♢♢♢♢
+#Cobble Gobble Pickaxe Name -> Name of the cobble gobble pickaxe (Please use & for color codes).
+ItemMagnet-Name: '&3&lItem Magnet'
+
+#Cobble Gobble Pickaxe Lore -> Any lore lines you would like on the cobble gobble pickaxe (Please use & for color codes).
+ItemMagnet-Lore:
+  - '&3When in your offhand'
+  - '&3Attracts items on the ground'
+  - '&3Into your inventory'
+  - ''
+  - '&6Sneak to disable'
+
+#This enables / disables the particles that appear when you break a block with the magnet activated
+Attraction-Particles: true
+
+#This is how far in blocks the magnet can pull items to the player
+Attraction-Distance: 8
+
+#This allows for custom model data for resource packs
+ItemMagnet-Model-Data: 1006
 
 #See messages.yml for all configurable plugin messages
 #♏ If you have any questions please join my discord, open a support ticket and @Mike3132

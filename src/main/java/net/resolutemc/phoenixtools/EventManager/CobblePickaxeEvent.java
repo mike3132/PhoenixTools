@@ -20,7 +20,7 @@ import org.bukkit.potion.PotionEffectType;
 public class CobblePickaxeEvent implements Listener {
 
     NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "CobblePickaxe-Key");
-    boolean particlesEnabled = PhoenixTools.getInstance().getConfig().getBoolean("Break-Particles");
+    boolean particlesEnabled = PhoenixTools.getInstance().getConfig().getBoolean("Cobble-Break-Particles");
 
     @EventHandler
     public void onBlockInteract(PlayerInteractEvent pie) {

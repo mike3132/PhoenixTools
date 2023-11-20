@@ -1,7 +1,7 @@
 package net.resolutemc.phoenixtools.EventManager;
 
 import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
-import net.resolutemc.phoenixtools.HashMapManager.SpawnerPickaxeMap;
+import net.resolutemc.phoenixtools.UtilManager.SpawnerPickaxeMap;
 import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -37,11 +37,11 @@ public class SpawnerPickaxeEvent implements Listener {
 
         if (!player.getInventory().getItemInMainHand().getType().equals(Material.GOLDEN_PICKAXE)) return;
         if (player.getInventory().getItemInMainHand().getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING)) {
-            SpawnerPickaxeMap.onEnabled(player);
+            SpawnerPickaxeMap.onActivate(player);
             new BukkitRunnable() {
                 @Override
                 public void run() {
-                    SpawnerPickaxeMap.onDisabled(player);
+                    SpawnerPickaxeMap.onDeactivate(player);
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() -1);
                 }
             }.runTaskLaterAsynchronously(PhoenixTools.getInstance(), 1L);

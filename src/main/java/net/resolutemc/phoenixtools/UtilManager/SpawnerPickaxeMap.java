@@ -1,4 +1,4 @@
-package net.resolutemc.phoenixtools.HashMapManager;
+package net.resolutemc.phoenixtools.UtilManager;
 
 import net.resolutemc.phoenixtools.PhoenixTools;
 import org.bukkit.entity.Player;
@@ -16,7 +16,7 @@ public class SpawnerPickaxeMap {
      *
      * @param player Adds a permission to the specified player
      */
-    public static void onEnabled(Player player) {
+    public static void onActivate(Player player) {
         String permissionString = "rosestacker.silktouch.*";
         PermissionAttachment attachment = player.addAttachment(PhoenixTools.getInstance());
         playersWithPermission.put(player.getUniqueId(), attachment);
@@ -28,7 +28,7 @@ public class SpawnerPickaxeMap {
      *
      * @param player Removes a permission from the specified player
      */
-    public static void onDisabled(Player player) {
+    public static void onDeactivate(Player player) {
         String permissionString = "rosestacker.silktouch.*";
         PermissionAttachment permission = playersWithPermission.get(player.getUniqueId());
         if (playersWithPermission.containsKey(player.getUniqueId())) {

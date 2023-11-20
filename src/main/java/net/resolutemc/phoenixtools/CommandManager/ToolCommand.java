@@ -4,6 +4,7 @@ import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
 import net.resolutemc.phoenixtools.ChatManager.ColorManager;
 import net.resolutemc.phoenixtools.GiveManager.ToolFactory;
 import net.resolutemc.phoenixtools.PhoenixTools;
+import net.resolutemc.phoenixtools.UtilManager.ItemMagnetUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

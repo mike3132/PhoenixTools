@@ -26,6 +26,8 @@ public class ToolFactory {
                 return HarvesterHoe.getHarvesterHoe();
             case "GLASSBREAKER":
                 return GlassBreaker.getGlassBreaker();
+            case "ITEMMAGNET":
+                return ItemMagnet.getItemMagnet();
         }
         return null;
     }

@@ -63,6 +63,7 @@ public class TabComplete implements TabCompleter {
                 arguments.add("CobblePickaxe");
                 arguments.add("HarvesterHoe");
                 arguments.add("GlassBreaker");
+                arguments.add("ItemMagnet");
                 for (String s : arguments) {
                     if (s.toLowerCase().startsWith(args[2].toLowerCase())) result.add(s);
                 }
