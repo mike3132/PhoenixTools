@@ -114,7 +114,7 @@ GlassBreaker-Model-Data: 1005
 
 #♢♢♢♢♢Item Magnet Item♢♢♢♢♢
 #Cobble Gobble Pickaxe Name -> Name of the cobble gobble pickaxe (Please use & for color codes).
-ItemMagnet-Name: '&3&lItem Magnet'
+ItemMagnet-Name: '&4&lItem Magnet'
 
 #Cobble Gobble Pickaxe Lore -> Any lore lines you would like on the cobble gobble pickaxe (Please use & for color codes).
 ItemMagnet-Lore:
