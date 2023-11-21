@@ -9,10 +9,10 @@ ConfigVersion: '1.0'
 ##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
 
 #✍✍✍✍✍Permissions✍✍✍✍✍
-#ragnarokTools.Give > Ability to give tools
-#ragnarokTools.Help > Shows the help menu
-#ragnarokTools.Reload > Reload the plugin config files
-#ragnarokTools.List > Shows the tool list menu
+#phoenixTools.Give > Ability to give tools
+#phoenixTools.Help > Shows the help menu
+#phoenixTools.Reload > Reload the plugin config files
+#phoenixTools.List > Shows the tool list menu
 
 #♢♢♢♢♢MultiBlock Pickaxe Item♢♢♢♢♢
 #MultiBlockPickaxe Name -> Name of the multiblock pickaxe (Please use & for color codes).

@@ -30,7 +30,6 @@ public class GlassBreaker {
         meta.setLore(lore);
         NamespacedKey key = new NamespacedKey(PhoenixTools.getInstance(), "GlassBreaker-Key");
         meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, "GlassBreaker");
-        meta.addEnchant(Enchantment.DIG_SPEED, 10, true);
         meta.setCustomModelData(PhoenixTools.getInstance().getConfig().getInt("GlassBreaker-Model-Data"));
         item.setItemMeta(meta);
         return item;

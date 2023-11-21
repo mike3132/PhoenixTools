@@ -4,7 +4,6 @@ import net.resolutemc.phoenixtools.ChatManager.ChatMessage;
 import net.resolutemc.phoenixtools.ChatManager.ColorManager;
 import net.resolutemc.phoenixtools.GiveManager.ToolFactory;
 import net.resolutemc.phoenixtools.PhoenixTools;
-import net.resolutemc.phoenixtools.UtilManager.ItemMagnetUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -24,7 +23,7 @@ public class ToolCommand implements CommandExecutor {
             return false;
         }
         if (args[0].equalsIgnoreCase("Reload")) {
-            if (!sender.hasPermission("ragnarokTools.Reload")) {
+            if (!sender.hasPermission("phoenixTools.Reload")) {
                 ChatMessage.sendConsoleMessage(sender, "No-permissions-placeholder");
                 return false;
             }
@@ -34,7 +33,7 @@ public class ToolCommand implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("List")) {
-            if (!sender.hasPermission("ragnarokTools.List")) {
+            if (!sender.hasPermission("phoenixTools.List")) {
                 ChatMessage.sendConsoleMessage(sender, "No-permissions-placeholder");
                 return false;
             }
@@ -46,7 +45,7 @@ public class ToolCommand implements CommandExecutor {
             ChatMessage.sendMessageNoPrefix(sender, "Tools-list-placeholder-footer");
             return false;
         }
-        if (!sender.hasPermission("ragnarokTools.Give")) {
+        if (!sender.hasPermission("phoenixTools.Give")) {
             ChatMessage.sendConsoleMessage(sender, "No-permissions-placeholder");
             return false;
         }
